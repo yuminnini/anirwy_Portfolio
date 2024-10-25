@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background : violet;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: whitesmoke;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: black;
+    text-shadow: 0 0 25px blueviolet,
+                 0 0 50px blueviolet;
+    transform: scale(1.1);
+}
+span{
+    color: white;
+}
+.navbar a{
+    font-size: 22px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: black;
+    border-bottom: 3px solid orchid;
+}   
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: slateblue;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 20px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+    margin-top: 10px;
+}
+
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+}
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: '2006 | CPE KMUTT';
+    color:black;
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: "";
+    background-color: slateblue;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid indigo;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid blueviolet;
+    }
+}
+@keyframes words{
+    0%, 20% {
+        content: '2006 | CPE KMUTT';
+    }
+    21%, 40% {
+        content: "We're all connected.";
+    }
+    41%, 60% {
+        content: "สาวน้อยร้อยสีผม";
+    }
+    61%, 80% {
+        content: "เจอแล้วแมวที่จริงใจ <3";
+    }
+    81%, 100% {
+        content: "Glad to see you all !";
+    }
+}
+
+@keyframes typing{
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%{
+        width: calc(100% + 8px);
+    }
+}
+
+.btn-box{
+    width: 345 px;
+    display: flex;
+    gap: 2em;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.btn-1{
+    padding: 15px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-color: violet;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: violet;
+    color: indigo;   
+    border: 2px solid white;
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-color: indigo;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: violet;
+    color: indigo;
+    border: 2px solid white;
+}
+.img-box img{
+    border-radius: 5%;
+    width: 350px;
+    margin-top: 130px;
+    margin-bottom: 90px;
+    margin-left: -50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.img-box img:hover{
+    box-shadow: 0 0 25px skyblue,
+                0 0 50px snow;
+    transform: scale(1.02);
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: violet;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50px;
+}
+
+.About{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 20px;
+    background: black;
+}
+.about-img img{
+    height: auto;
+    position: relative;
+    width: 350px;
+    border-radius: 5%;
+    box-shadow: 0 0 25px indianred,
+                0 0 50px indianred;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.about-img img:hover{
+    box-shadow: 0 0 25px firebrick,
+                0 0 50px firebrick;
+    transform: scale(1.02);
+}
+.about-content{
+    max-width: 700px;
+    margin-top: 10px;
+}
+.about-content h2{
+    text-align: left;
+    color: whitesmoke;
+    font-size: 42px;
+}
+.about-content h3{
+    font-size: 30px;
+    color: whitesmoke;
+}
+.about-content h5{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.about-content p{
+    color: whitesmoke;
+    font-size: 17px;
+    margin: 2em 0 3em;
+}
+.cosplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1px;
+    padding: 20px;
+    background: whitesmoke;
+}
+.cosplay-content h2{
+    text-align: center;
+    color: black;
+    font-size: 42px;
+
+}
+
+.gallery{
+    width: 950px;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+    opacity: .7;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+}
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+.gallery div img:hover{
+   filter: grayscale(0);
+   cursor: pointer;
+   transform: scale(1.1);
+   opacity: 1;
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.Education{
+    background:slateblue;
+    padding: 50px;
+    justify-content: space-between;
+}
+.education-content h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.education-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    margin: 1rem 0;
+    gap: 1rem;
+    row-gap: 3rem;
+}
+.education-card{
+    height: 390px;
+    max-width: 300px;
+    background-color: white;
+    backdrop-filter: blur(30px);
+    border: 2px solid black;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 4rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 25px indigo;
+    transition: 0.3s ease;
+}
+.education-card:hover{
+    box-shadow: 0 0 25px indigo,
+                0 0 50px indigo;
+    transform: scale(1.02);
+}
+.education-card img{
+    max-width: 16vw;
+    object-fit: cover;
+}
+.education-card h3{
+    font-size: 1.5rem;
+}
+.education-card p{
+    font-size: 1rem;
+}
+
+.Skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2px;
+    padding: 50px;
+    background: black;
+    color: white;
+}
+.skills-content h2{ 
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    place-items: center;
+    gap: 2rem;
+}
+.skills-box{
+    background-color: mediumpurple;
+    color: white;
+    height: 180px;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+}
+.skills-box:hover{
+    background: white;
+    color: black;
+    transform: scale(1.03);
+}
+.skills-box .skills-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 100px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 2em;
+}
+.skills-info h4{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: auto;
+}
+.skills-info p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-height: 100px;
+    text-align: left;
+    margin: auto;
+}
+
+.Contact{
+    background:slateblue;
+    padding: 50px;
+    justify-content: space-between;
+}
+.contact-content h2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+.contact-box{
+    text-align: center;
+    place-items: center;
+}
+.contact-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.contact-item{
+    flex: 1;
+    flex-basis: 0;
+    min-width: 300px;
+    background-color: violet;
+    padding: 2rem;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    flex-direction: row;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+.contact-item:hover{
+    background:violet;
+    color: black;
+    transform: scale(1.03);
+}
+.contact-item p{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+} 
+.footer .copyright{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    margin-top: 0px;
+}
+.footer{
+    padding: 30px 0;
+    background-color: black;
+    text-align: center;
+  }
+.footer .contact-box{
+    text-align: center;
+}
+.footer ul{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.footer ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+.footer ul li a:hover{
+    border-bottom: 2px solid violet;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+i{
+    font-size: 4rem;
+    color: white;
+}

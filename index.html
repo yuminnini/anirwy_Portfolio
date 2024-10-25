@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Rapheephitcha_Portfilio</title>
+</head>
+<body>
+    
+    <header class="header">
+        
+        <a href="#home" class="logo"><span>ANI</span>RWY</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Welcome to my world &#127760</h3>
+
+            <h1>I'm <span>Rapheephitcha Warasinkullaphat</span></h1>
+            <h3 class="text-animation">
+                <span></span>
+            </h3>
+
+            <a href="https://www.facebook.com/rapheephitcha.warasinkullaphat" target="_blank">
+                <img src="logo/facebook-circle-logo.png" alt="Facebook Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.instagram.com/anirwy" target="_blank">
+                <img src="logo/instagram-logo.png" alt="Instagram Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="discordapp.com/users/892706829333827584" target="_blank">
+                <img src="logo/discord-alt-logo.png" alt="Discord Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.tiktok.com/@b4ymin?_t=8nd5jqXgDzD&_r=1" target="_blank">
+                <img src="logo/tiktok-logo.png" alt="Tiktok Icon" style="width:48px;height:48px;">
+            </a>
+            <a href="https://soundcloud.com/b4ymin" target="_blank">
+                <img src="logo/soundcloud-logo.png" alt="Soundcloud Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.youtube.com/@b4ymin" target="_blank">
+                <img src="logo/youtube-logo.png" alt="Youtube Icon" style="width:50px;height:50px;">
+            </a>
+            
+            
+
+        </div>
+        <div class="img-box">
+            <img src="pic/jett.JPG" alt="">
+        </div>
+    </section>
+    
+    <section class="About" id="aboutme"> 
+        <div class="about-img">
+            <img src="pic/red.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me ʕ♡˙ᴥ˙♡ʔ</h2>
+            <h3>Rapheephitcha Warasinkullaphat [Ani]</h3>
+            <h5>Birthday: 22 January 2006 | Age: 18<br>Height: 170 cm | Personality type: ISFP
+                <br>Hobby: Cosplay &#127872, mixing songs &#127926
+                <br>Music genres: R&B/SOUL &#127911&#128150
+            </h5>
+            <p>I started interesting about technology and computers since I was 16 years old and
+                I'm passionate about computer such as programming and mixing music.
+                According to these reasons, I'm enthusiastic about studying in faculty of Computer Engineering.
+                In the future, I want to be a music producer/DJ and cosplay, programming as hobbies.
+                I will do my best for my study and my walk of life in the future.</p>
+            <div class="btn-box">
+                <a href="https://www.instagram.com/yuminnini" target="_blank"class="btn-1">Cosplay</a>
+                <a href="https://soundcloud.com/b4ymin" target="_blank"class="btn-2">Remix songs</a>
+            </div>
+        </div>
+        </section>
+        
+    </section>
+    <section class="cosplay">
+        <div class="cosplay-content">
+            <h2 class="heading">&#128159 My cosplay &#128159</h2>
+            <div class="gallery-wrap">
+                <img src="cos/back.png" id="backBtn">
+                <div class="gallery">
+                        <div>
+                            <span><img src="cos/img-1.JPG"></span>
+                            <span><img src="cos/img-2.JPG"></span>
+                            <span><img src="cos/img-3.JPG"></span>
+                        </div>
+                        <div>
+                            <span><img src="cos/img-4.JPG"></span>
+                            <span><img src="cos/img-5.JPG"></span>
+                            <span><img src="cos/img-6.JPG"></span>
+                        </div>
+                </div>
+                <img src="cos/next.png" id="nextBtn">
+             </div>
+        </div>
+        <script>
+            let scrollContainer = document.querySelector(".gallery");
+            let backBtn = document.getElementById("backBtn");
+            let nextBtn = document.getElementById("nextBtn");
+
+            scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.ltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+            });
+
+            nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 950;
+            });
+
+            backBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 950;
+            });
+
+        </script>
+    </section>
+
+    <section class="Education" id="education">
+        <div class="education-content">
+            <h2 class="heading">&#128214 Education &#128187</h2>
+            <div class="education-box">
+                <div class="education-card">
+                    <img src="pic/act.jpeg" alt="">
+                    
+                    <h3>Elementary School</h3>
+                    <p>Assumption College Thonburi<br>2012 - 2017</p>
+                </div>
+    
+                <div class="education-card">
+                    <img src="pic/sw.jpeg" alt="">
+                    
+                    <h3>Senior High School</h3>
+                    <p>Satriwithaya<br>2018 - 2023</p>
+                </div>
+    
+                <div class="education-card">
+                    <img src="pic/kmutt.jpeg" alt="">
+                    
+                    <h3>Computer Eng.</h3>
+                    <p>King Mongkut University of Technology Thonburi<br>2024 - Present</p>
+                </div>
+        </div>
+    </section>  
+    
+    <section class="Skills" id="skills">
+        <div class="skills-content">
+            <h2 class="heading">&#127775 Skills &#127776</h2>
+            <div class="skills-container">
+
+                <div class="skills-box">
+                    <div class="skills-info">
+                        <h4>Programming Language</h4>
+                        <p>&#9673 C/C#<br>&#9673 HTML/CSS</p>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-info">
+                        <h4>Making/Remixing music</h4>
+                        <p>&#9673 Audacity<br>&#9673 Bandlab</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+    </section>
+
+    <section class="Contact" id="contact">
+        <div class="contact-content">
+            <h2 class="heading">ʕっ•ᴥ•ʔっ Contact ♡</h2>
+                    <div class="contact-info">
+                      <div class="contact-item">
+                        <i class="bx bxl-gmail"></i>
+                        <p>KMUTT Email</p>
+                        <span>
+                          <a href="mailto:rapheephitcha.wara@kmutt.ac.th">rapheephitcha.wara@<br>kmutt.ac.th</a>
+                        </span>
+                      </div>
+                      <div class="contact-item">
+                          <i class="bx bxl-gmail"></i>
+                        <p>Personal Email</p>
+                        <span>
+                          <a href="mailto:anirppw@gmail.com">anirppw@gmail.com</a>
+                        </span>
+                      </div>
+                      <div class="contact-item">
+                        <i class="bx bxl-github"></i>
+                        <p>Github</p>
+                        <span>
+                          <a href="https://github.com/yuminnini" target="_blank" rel="noopener noreferrer">yuminnini</a>
+                        </span>
+                      </div>
+                    
+                        
+                    </div>
+                </div> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contact-box">
+            <a href="https://www.facebook.com/rapheephitcha.warasinkullaphat" target="_blank">
+            <img src="logo/facebook-circle-logo.png" alt="Facebook Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.instagram.com/anirwy" target="_blank">
+            <img src="logo/instagram-logo.png" alt="Instagram Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="discordapp.com/users/892706829333827584" target="_blank">
+            <img src="logo/discord-alt-logo.png" alt="Discord Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.tiktok.com/@b4ymin?_t=8nd5jqXgDzD&_r=1" target="_blank">
+            <img src="logo/tiktok-logo.png" alt="Tiktok Icon" style="width:48px;height:48px;">
+            </a>
+            <a href="https://soundcloud.com/b4ymin" target="_blank">
+            <img src="logo/soundcloud-logo.png" alt="Soundcloud Icon" style="width:50px;height:50px;">
+            </a>
+            <a href="https://www.youtube.com/@b4ymin" target="_blank">
+            <img src="logo/youtube-logo.png" alt="Youtube Icon" style="width:50px;height:50px;">
+            </a>
+        </div>
+        <ul class="list">
+            <li>
+              <a href="#aboutme">About Me</a>
+            <li>
+              <a href="#education">Education</a>
+            <li>
+              <a href="#skills">Skills</a>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+           </ul>
+        <p class="copyright">
+            &copy 2024 Rapheephitcha Warasinkullaphat | All rights reserved.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
