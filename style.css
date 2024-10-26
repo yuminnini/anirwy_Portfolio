@@ -497,31 +497,3 @@ i{
     font-size: 4rem;
     color: white;
 }
-
-@media(max-width:895px){
-    #menu-icon{
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 50%;
-        padding: 3rem 3%;
-        background: violet;
-        backdrop-filter: blur(20px);
-        border-bottom-left-radius: 2rem;
-        border-left: 3px solid black;
-        border-bottom: 3px solid black;
-
-    }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a{
-        display: block;
-        font-size: 1.5rem;
-        margin: 1rem 0;
-        color: whitesmoke;
-    }
-}
