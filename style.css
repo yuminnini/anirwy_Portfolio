@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 12%;
+    padding: 24px 12%;
     background : violet;
     backdrop-filter: blur(10px);
     display: flex;
@@ -47,7 +47,12 @@ span{
 .navbar a:hover,
 .navbar a.active{
     color: black;
-    border-bottom: 3px solid orchid;
+    border-bottom: 3px solid slateblue;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: white;
+    display: none;
 }   
 .home{
     width: 100%;
@@ -89,7 +94,7 @@ span{
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid indigo;
+    border-left: 3px solid midnightblue;
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
@@ -178,8 +183,8 @@ span{
     cursor: pointer;
 }
 .img-box img:hover{
-    box-shadow: 0 0 25px skyblue,
-                0 0 50px snow;
+    box-shadow: 0 0 25px midnightblue,
+                0 0 50px midnightblue;
     transform: scale(1.02);
 }
 
@@ -254,7 +259,6 @@ span{
     text-align: center;
     color: black;
     font-size: 42px;
-
 }
 
 .gallery{
@@ -492,4 +496,32 @@ a{
 i{
     font-size: 4rem;
     color: white;
+}
+
+@media(max-width:895px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 3rem 3%;
+        background: violet;
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: whitesmoke;
+    }
 }
